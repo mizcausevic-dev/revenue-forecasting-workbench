@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forecast View</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Aptos", "Avenir Next", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at top right, rgba(52, 211, 153, 0.14), transparent 26%),
+          linear-gradient(180deg, #0a0f16 0%, #111827 100%);
+        color: #f8fafc;
+      }
+      .frame {
+        width: 1600px;
+        height: 900px;
+        padding: 42px;
+        box-sizing: border-box;
+      }
+      .card {
+        height: 100%;
+        padding: 32px;
+        border-radius: 32px;
+        background: rgba(16, 21, 31, 0.9);
+        border: 1px solid rgba(148, 163, 184, 0.16);
+      }
+      .eyebrow {
+        color: #fbbf24;
+        text-transform: uppercase;
+        letter-spacing: 0.22em;
+        font-size: 13px;
+      }
+      h1 {
+        margin: 8px 0 14px;
+        font-size: 52px;
+        font-family: Georgia, serif;
+      }
+      p {
+        color: #d1d5db;
+        max-width: 760px;
+        line-height: 1.7;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 24px;
+        margin-top: 24px;
+      }
+      .panel {
+        border-radius: 24px;
+        background: rgba(20, 28, 41, 0.92);
+        border: 1px solid rgba(148, 163, 184, 0.14);
+        padding: 24px;
+      }
+      .chart {
+        position: relative;
+        height: 360px;
+        margin-top: 10px;
+      }
+      .gridline {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: rgba(148, 163, 184, 0.12);
+      }
+      .line {
+        position: absolute;
+        inset: 0;
+      }
+      .line svg {
+        width: 100%;
+        height: 100%;
+      }
+      .legend {
+        display: flex;
+        gap: 18px;
+        margin-top: 14px;
+        color: #cbd5e1;
+      }
+      .legend span::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        border-radius: 999px;
+        margin-right: 8px;
+      }
+      .l1::before { background: #60a5fa; }
+      .l2::before { background: #f8fafc; }
+      .l3::before { background: #34d399; }
+      .risk {
+        padding: 16px;
+        border-radius: 18px;
+        background: rgba(30, 41, 59, 0.72);
+        margin-bottom: 14px;
+      }
+      .risk strong {
+        display: block;
+        margin-bottom: 8px;
+      }
+      .risk small {
+        color: #fbbf24;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="card">
+        <div class="eyebrow">Forecast curve</div>
+        <h1>Planning software for the number leadership actually has to defend.</h1>
+        <p>
+          The workbench separates pipeline, commit, and best-case posture so teams can see where the number is stable,
+          where it is vulnerable, and what upside still depends on execution rather than hope.
+        </p>
+        <div class="grid">
+          <div class="panel">
+            <div class="chart">
+              <div class="gridline" style="top: 18%"></div>
+              <div class="gridline" style="top: 38%"></div>
+              <div class="gridline" style="top: 58%"></div>
+              <div class="gridline" style="top: 78%"></div>
+              <div class="line">
+                <svg viewBox="0 0 900 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M40 250 C140 210, 250 185, 340 165 S560 125, 860 95" stroke="#60a5fa" stroke-width="6" />
+                  <path d="M40 300 C150 270, 260 248, 340 220 S560 195, 860 165" stroke="#F8FAFC" stroke-width="6" />
+                  <path d="M40 286 C150 248, 260 220, 340 192 S560 160, 860 128" stroke="#34d399" stroke-width="6" />
+                </svg>
+              </div>
+            </div>
+            <div class="legend">
+              <span class="l1">Pipeline</span>
+              <span class="l2">Commit</span>
+              <span class="l3">Best case</span>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="risk">
+              <strong>Northstar Cloud · $1.8M</strong>
+              Security review slipped beyond forecast checkpoint. <small>Escalate within 48 hours.</small>
+            </div>
+            <div class="risk">
+              <strong>Apex Data Systems · $980K</strong>
+              Procurement path is still undefined. <small>Route to deal desk support.</small>
+            </div>
+            <div class="risk">
+              <strong>Helio Commerce · $1.2M</strong>
+              Pricing pressure is rising faster than margin guardrails allow. <small>Rework package before review.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
