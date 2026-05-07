@@ -1,0 +1,280 @@
+:root {
+  color-scheme: dark;
+  font-family: "Aptos", "Avenir Next", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top right, rgba(52, 211, 153, 0.14), transparent 24%),
+    radial-gradient(circle at top left, rgba(245, 158, 11, 0.12), transparent 22%),
+    linear-gradient(180deg, #0a0f16 0%, #121923 48%, #111827 100%);
+  color: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: transparent;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.page-shell {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 40px 28px 64px;
+}
+
+.hero,
+.signal-grid,
+.content-grid,
+.narrative-grid {
+  margin-bottom: 28px;
+}
+
+.hero {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 1.15fr 0.85fr;
+  padding: 36px;
+  border-radius: 34px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(16, 21, 31, 0.88);
+  box-shadow: 0 30px 72px rgba(2, 8, 23, 0.34);
+}
+
+.eyebrow,
+.panel-kicker {
+  margin: 0 0 12px;
+  color: #fbbf24;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.78rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: "Iowan Old Style", "Georgia", serif;
+  font-size: clamp(2.8rem, 4vw, 4.7rem);
+  line-height: 1.04;
+  max-width: 11ch;
+}
+
+.hero-text {
+  max-width: 58ch;
+  color: #d1d5db;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-chips span,
+.scenario-header span {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(52, 211, 153, 0.12);
+  color: #bbf7d0;
+  font-size: 0.92rem;
+}
+
+.hero-framework {
+  display: grid;
+  gap: 16px;
+  align-content: center;
+}
+
+.framework-card {
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  background: linear-gradient(180deg, rgba(17, 24, 39, 0.96), rgba(20, 28, 41, 0.88));
+}
+
+.framework-card strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #f8fafc;
+  font-size: 1.08rem;
+}
+
+.framework-card p {
+  margin: 0;
+  color: #cbd5e1;
+  line-height: 1.65;
+}
+
+.signal-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.signal-card {
+  padding: 20px;
+  border-radius: 22px;
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  background: rgba(16, 21, 31, 0.82);
+}
+
+.signal-card p,
+.signal-card span {
+  margin: 0;
+}
+
+.signal-card p {
+  color: #94a3b8;
+}
+
+.signal-card strong {
+  display: block;
+  margin: 10px 0 8px;
+  font-size: 2rem;
+}
+
+.signal-card.positive strong {
+  color: #34d399;
+}
+
+.signal-card.watch strong {
+  color: #fda4af;
+}
+
+.signal-card.neutral strong {
+  color: #e2e8f0;
+}
+
+.signal-card span {
+  color: #cbd5e1;
+}
+
+.content-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.primary-grid {
+  grid-template-columns: 1.3fr 0.8fr;
+}
+
+.secondary-grid {
+  grid-template-columns: 1fr 0.95fr;
+}
+
+.panel {
+  padding: 26px;
+  border-radius: 28px;
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  background: rgba(16, 21, 31, 0.84);
+  box-shadow: 0 18px 52px rgba(2, 8, 23, 0.28);
+}
+
+.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: baseline;
+  margin-bottom: 18px;
+}
+
+.panel-heading h2,
+.narrative-card h3 {
+  margin: 0;
+  font-family: "Iowan Old Style", "Georgia", serif;
+}
+
+.panel-note {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.chart-frame {
+  height: 320px;
+}
+
+.chart-frame.compact {
+  height: 300px;
+}
+
+.risk-list,
+.scenario-list,
+.narrative-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.risk-card,
+.scenario-card,
+.narrative-card {
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(22, 30, 43, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.risk-topline,
+.risk-meta,
+.scenario-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.risk-meta {
+  margin: 10px 0;
+  color: #94a3b8;
+  font-size: 0.92rem;
+}
+
+.risk-card p,
+.scenario-card p,
+.narrative-card p {
+  color: #d1d5db;
+  line-height: 1.7;
+}
+
+.risk-card small,
+.scenario-card small {
+  color: #f8fafc;
+}
+
+.narrative-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 1100px) {
+  .hero,
+  .primary-grid,
+  .secondary-grid,
+  .narrative-grid,
+  .signal-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .page-shell {
+    padding: 22px 16px 44px;
+  }
+
+  .hero,
+  .panel {
+    padding: 20px;
+  }
+
+  .panel-heading,
+  .risk-topline,
+  .risk-meta,
+  .scenario-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

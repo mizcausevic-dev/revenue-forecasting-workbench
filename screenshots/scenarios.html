@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scenario View</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Aptos", "Avenir Next", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(245, 158, 11, 0.14), transparent 25%),
+          linear-gradient(180deg, #0b1018 0%, #111827 100%);
+        color: #f8fafc;
+      }
+      .frame {
+        width: 1600px;
+        height: 900px;
+        padding: 42px;
+        box-sizing: border-box;
+      }
+      .card {
+        height: 100%;
+        padding: 32px;
+        border-radius: 32px;
+        background: rgba(16, 21, 31, 0.9);
+        border: 1px solid rgba(148, 163, 184, 0.16);
+      }
+      .eyebrow {
+        color: #86efac;
+        text-transform: uppercase;
+        letter-spacing: 0.22em;
+        font-size: 13px;
+      }
+      h1 {
+        margin: 8px 0 18px;
+        font-size: 50px;
+        font-family: Georgia, serif;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-top: 24px;
+      }
+      .panel {
+        border-radius: 24px;
+        background: rgba(20, 28, 41, 0.92);
+        border: 1px solid rgba(148, 163, 184, 0.14);
+        padding: 22px;
+      }
+      .bars {
+        display: grid;
+        gap: 18px;
+        margin-top: 20px;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 150px 1fr 90px;
+        gap: 16px;
+        align-items: center;
+      }
+      .track {
+        height: 28px;
+        border-radius: 999px;
+        overflow: hidden;
+        background: rgba(30, 41, 59, 0.9);
+      }
+      .fill1 { height: 100%; width: 91%; background: linear-gradient(90deg, #34d399, #10b981); }
+      .fill2 { height: 100%; width: 84%; background: linear-gradient(90deg, #60a5fa, #3b82f6); }
+      .fill3 { height: 100%; width: 79%; background: linear-gradient(90deg, #f59e0b, #f97316); }
+      .fill4 { height: 100%; width: 88%; background: linear-gradient(90deg, #a78bfa, #8b5cf6); }
+      .scenario {
+        padding: 18px;
+        border-radius: 18px;
+        background: rgba(30, 41, 59, 0.72);
+        margin-bottom: 14px;
+      }
+      .scenario strong {
+        display: block;
+        margin-bottom: 8px;
+      }
+      .scenario span {
+        display: inline-block;
+        margin-bottom: 8px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(52, 211, 153, 0.12);
+        color: #bbf7d0;
+      }
+      p, small { color: #d1d5db; line-height: 1.7; }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="card">
+        <div class="eyebrow">Segment quality and scenarios</div>
+        <h1>Forecast confidence gets stronger when segment discipline and upside are visible together.</h1>
+        <div class="grid">
+          <div class="panel">
+            <div class="bars">
+              <div class="row"><span>Enterprise</span><div class="track"><div class="fill1"></div></div><strong>91</strong></div>
+              <div class="row"><span>Mid-Market</span><div class="track"><div class="fill2"></div></div><strong>84</strong></div>
+              <div class="row"><span>Partner</span><div class="track"><div class="fill3"></div></div><strong>79</strong></div>
+              <div class="row"><span>Expansion</span><div class="track"><div class="fill4"></div></div><strong>88</strong></div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="scenario">
+              <strong>Commit defense</strong>
+              <span>+$0.6M</span>
+              <p>Stabilizes current quarter without raising risk appetite.</p>
+              <small>Focus on forecast hygiene and known blockers.</small>
+            </div>
+            <div class="scenario">
+              <strong>Guided upside</strong>
+              <span>+$1.9M</span>
+              <p>Unlocks board-visible acceleration with moderate execution risk.</p>
+              <small>Requires enterprise CTA rollout and deal desk support.</small>
+            </div>
+            <div class="scenario">
+              <strong>Partner recovery</strong>
+              <span>+$1.1M</span>
+              <p>Reclaims underperforming channel contribution in EMEA and APAC.</p>
+              <small>Needs routing correction and tighter channel ownership.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
